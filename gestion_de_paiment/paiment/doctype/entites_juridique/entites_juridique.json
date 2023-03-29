@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-24 11:43:36.220566",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom_de_la_soci\u00e9t\u00e9",
+  "abr\u00e9viation",
+  "forme_juridique_de_la_soci\u00e9t\u00e9",
+  "num\u00e9ro_dimmatriculation_de_la_soci\u00e9t\u00e9",
+  "date_de_cr\u00e9ation_de_la_soci\u00e9t\u00e9",
+  "column_break_mmwqc",
+  "capital_social_de_la_soci\u00e9t\u00e9",
+  "objet_social_de_la_soci\u00e9t\u00e9",
+  "nif",
+  "devise",
+  "column_break_th1uv",
+  "nom",
+  "pr\u00e9nom",
+  "adresse",
+  "column_break_hlu5j",
+  "t\u00e9l\u00e9phone",
+  "email",
+  "column_break_rwals",
+  "nom_ass",
+  "pre_ass",
+  "column_break_bh5qh",
+  "nbre_ass"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom_de_la_soci\u00e9t\u00e9",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom de la soci\u00e9t\u00e9",
+   "reqd": 1
+  },
+  {
+   "fieldname": "forme_juridique_de_la_soci\u00e9t\u00e9",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Forme juridique de la soci\u00e9t\u00e9",
+   "options": "Forme juridique",
+   "reqd": 1
+  },
+  {
+   "fieldname": "num\u00e9ro_dimmatriculation_de_la_soci\u00e9t\u00e9",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Num\u00e9ro d'immatriculation de la soci\u00e9t\u00e9",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "pr\u00e9nom",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "adresse",
+   "fieldtype": "Data",
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "t\u00e9l\u00e9phone",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_hlu5j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "abr\u00e9viation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Abr\u00e9viation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_de_cr\u00e9ation_de_la_soci\u00e9t\u00e9",
+   "fieldtype": "Date",
+   "label": "Date de cr\u00e9ation de la soci\u00e9t\u00e9"
+  },
+  {
+   "fieldname": "objet_social_de_la_soci\u00e9t\u00e9",
+   "fieldtype": "Data",
+   "label": "Objet social de la soci\u00e9t\u00e9 "
+  },
+  {
+   "fieldname": "capital_social_de_la_soci\u00e9t\u00e9",
+   "fieldtype": "Float",
+   "label": "Capital social de la soci\u00e9t\u00e9",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nif",
+   "fieldtype": "Int",
+   "label": "Num\u00e9ro d'identification fiscale (NIF)"
+  },
+  {
+   "fieldname": "nom_ass",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "pre_ass",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "nbre_ass",
+   "fieldtype": "Data",
+   "label": "Nombre de parts"
+  },
+  {
+   "fieldname": "column_break_rwals",
+   "fieldtype": "Section Break",
+   "label": "Identit\u00e9 des associ\u00e9sde la soci\u00e9t\u00e9"
+  },
+  {
+   "fieldname": "column_break_mmwqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "devise",
+   "fieldtype": "Select",
+   "label": "Devise",
+   "options": "TND\nEUR\nUSD"
+  },
+  {
+   "fieldname": "column_break_bh5qh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_th1uv",
+   "fieldtype": "Section Break",
+   "label": "Coordonn\u00e9es des dirigeants de la soci\u00e9t\u00e9"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-24 12:28:36.056887",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "Entites Juridique",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

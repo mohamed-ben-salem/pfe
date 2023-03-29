@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:libell\u00e9",
+ "creation": "2023-03-28 18:09:02.156141",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "type",
+  "libell\u00e9",
+  "compte_comptable",
+  "cat\u00e9gorie",
+  "column_break_iyk8s",
+  "taux_de_tva",
+  "code_analytique",
+  "statut",
+  "section_break_vtbod",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "libell\u00e9",
+   "fieldtype": "Data",
+   "label": "Libell\u00e9",
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Recette\nD\u00e9penses",
+   "reqd": 1
+  },
+  {
+   "fieldname": "compte_comptable",
+   "fieldtype": "Data",
+   "label": "Compte comptable "
+  },
+  {
+   "fieldname": "cat\u00e9gorie",
+   "fieldtype": "Data",
+   "label": "Cat\u00e9gorie"
+  },
+  {
+   "fieldname": "taux_de_tva",
+   "fieldtype": "Percent",
+   "label": "Taux de TVA "
+  },
+  {
+   "fieldname": "code_analytique",
+   "fieldtype": "Data",
+   "label": "Code analytique"
+  },
+  {
+   "fieldname": "statut",
+   "fieldtype": "Select",
+   "label": "Statut",
+   "options": "Active\nEn attente\nInactive"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Long Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_iyk8s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vtbod",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-28 22:46:24.166793",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "Natures",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
