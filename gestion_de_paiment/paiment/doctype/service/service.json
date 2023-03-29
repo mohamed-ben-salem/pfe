@@ -2,23 +2,22 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:libell\u00e9",
- "creation": "2023-03-28 18:09:02.156141",
+ "creation": "2023-03-29 09:08:14.523339",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "code",
-  "type",
   "libell\u00e9",
-  "compte_comptable",
-  "cat\u00e9gorie",
-  "column_break_iyk8s",
-  "taux_de_tva",
-  "code_analytique",
-  "statut",
-  "section_break_vtbod",
-  "notes"
+  "responsable",
+  "adresse",
+  "column_break_dtere",
+  "t\u00e9l\u00e9phone",
+  "email",
+  "description",
+  "section_break_faray",
+  "note"
  ],
  "fields": [
   {
@@ -31,63 +30,56 @@
   {
    "fieldname": "libell\u00e9",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Libell\u00e9",
+   "reqd": 1,
    "unique": 1
   },
   {
-   "fieldname": "type",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Type",
-   "options": "Recette\nD\u00e9pense",
-   "reqd": 1
-  },
-  {
-   "fieldname": "compte_comptable",
+   "fieldname": "responsable",
    "fieldtype": "Data",
-   "label": "Compte comptable "
+   "label": "Responsable"
   },
   {
-   "fieldname": "cat\u00e9gorie",
+   "fieldname": "adresse",
    "fieldtype": "Data",
-   "label": "Cat\u00e9gorie"
+   "label": "Adresse"
   },
   {
-   "fieldname": "taux_de_tva",
-   "fieldtype": "Percent",
-   "label": "Taux de TVA "
+   "fieldname": "t\u00e9l\u00e9phone",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone"
   },
   {
-   "fieldname": "code_analytique",
+   "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Code analytique"
+   "label": "Email"
   },
   {
-   "fieldname": "statut",
-   "fieldtype": "Select",
-   "label": "Statut",
-   "options": "Active\nEn attente\nInactive"
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
   },
   {
-   "fieldname": "notes",
-   "fieldtype": "Long Text",
-   "label": "Notes"
+   "fieldname": "note",
+   "fieldtype": "Text Editor",
+   "label": "Note"
   },
   {
-   "fieldname": "column_break_iyk8s",
+   "fieldname": "column_break_dtere",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_vtbod",
+   "fieldname": "section_break_faray",
    "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-29 13:33:33.673251",
+ "modified": "2023-03-29 09:18:03.860436",
  "modified_by": "Administrator",
  "module": "paiment",
- "name": "Natures",
+ "name": "Service",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-29 13:21:29.747953",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "compte_pour_entreprise",
+  "societe",
+  "sau_col4",
+  "is_default",
+  "sau_sec_1",
+  "nom_compte",
+  "com_ent",
+  "banque",
+  "type_compte",
+  "sau_sec_2",
+  "iban",
+  "rib",
+  "devise",
+  "sau_col_5",
+  "code_branche",
+  "num_compte",
+  "date_ouverture",
+  "saut_sec_6",
+  "type_de_tiers",
+  "saut_col_6",
+  "tiers"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "compte_pour_entreprise",
+   "fieldtype": "Check",
+   "label": "Compte bancaire pour entreprise "
+  },
+  {
+   "fieldname": "societe",
+   "fieldtype": "Link",
+   "label": " Societe",
+   "options": "Societe"
+  },
+  {
+   "fieldname": "sau_col4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_default",
+   "fieldtype": "Check",
+   "label": "Compte courant"
+  },
+  {
+   "fieldname": "sau_sec_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nom_compte",
+   "fieldtype": "Data",
+   "label": "Nom du Compte"
+  },
+  {
+   "depends_on": "compte_pour_entreprise",
+   "fieldname": "com_ent",
+   "fieldtype": "Data",
+   "label": "Compte d'entreprise"
+  },
+  {
+   "fieldname": "banque",
+   "fieldtype": "Link",
+   "label": "Banque",
+   "options": "Banque"
+  },
+  {
+   "fieldname": "type_compte",
+   "fieldtype": "Data",
+   "label": "Type de compte"
+  },
+  {
+   "fieldname": "sau_sec_2",
+   "fieldtype": "Section Break",
+   "label": "D\u00e9tails du compte "
+  },
+  {
+   "fieldname": "iban",
+   "fieldtype": "Data",
+   "label": " IBAN "
+  },
+  {
+   "fieldname": "rib",
+   "fieldtype": "Data",
+   "label": "RIB"
+  },
+  {
+   "fieldname": "devise",
+   "fieldtype": "Data",
+   "label": "Devise "
+  },
+  {
+   "fieldname": "sau_col_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "code_branche",
+   "fieldtype": "Data",
+   "label": "Code de la branche "
+  },
+  {
+   "fieldname": "num_compte",
+   "fieldtype": "Data",
+   "label": "No de compte bancaire "
+  },
+  {
+   "fieldname": "date_ouverture",
+   "fieldtype": "Date",
+   "label": "Date d'ouverture du compte"
+  },
+  {
+   "fieldname": "saut_sec_6",
+   "fieldtype": "Section Break",
+   "label": "D\u00e9tails du tiers"
+  },
+  {
+   "depends_on": "is_default",
+   "fieldname": "type_de_tiers",
+   "fieldtype": "Link",
+   "label": "Type de Tiers",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "saut_col_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "is_default",
+   "fieldname": "tiers",
+   "fieldtype": "Dynamic Link",
+   "label": "Tiers ",
+   "options": "type_de_tiers"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 13:22:59.568258",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "Compte bancaire",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

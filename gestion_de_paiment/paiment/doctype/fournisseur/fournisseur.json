@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-29 13:03:50.786851",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom_du_fournisseur",
+  "adresse",
+  "column_break_31jrp",
+  "adresse_email",
+  "site_web",
+  "section_break_p2dll",
+  "compte_bancaire",
+  "section_break_gvx1w",
+  "num\u00e9ro_didentification_fiscale_nif",
+  "column_break_8hobl",
+  "tva",
+  "section_break_nuhpa",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom_du_fournisseur",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom du fournisseur",
+   "reqd": 1
+  },
+  {
+   "fieldname": "adresse",
+   "fieldtype": "Data",
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "adresse_email",
+   "fieldtype": "Data",
+   "label": "Adresse email "
+  },
+  {
+   "fieldname": "site_web",
+   "fieldtype": "Data",
+   "label": "Site web"
+  },
+  {
+   "fieldname": "compte_bancaire",
+   "fieldtype": "Link",
+   "label": "Compte Bancaire",
+   "options": "Compte bancaire"
+  },
+  {
+   "fieldname": "num\u00e9ro_didentification_fiscale_nif",
+   "fieldtype": "Data",
+   "label": "Num\u00e9ro d'identification fiscale (NIF) "
+  },
+  {
+   "fieldname": "tva",
+   "fieldtype": "Data",
+   "label": "TVA"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_31jrp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_p2dll",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_gvx1w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_8hobl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nuhpa",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 13:36:31.341715",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "Fournisseur",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
