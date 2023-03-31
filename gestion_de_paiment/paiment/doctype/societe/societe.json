@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:nom_de_la_soci\u00e9t\u00e9",
  "creation": "2023-03-24 11:43:36.220566",
  "default_view": "List",
  "doctype": "DocType",
@@ -36,7 +37,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Nom de la soci\u00e9t\u00e9",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "forme_juridique_de_la_soci\u00e9t\u00e9",
@@ -152,10 +154,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-24 12:28:36.056887",
+ "modified": "2023-03-30 11:02:40.924391",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Societe",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

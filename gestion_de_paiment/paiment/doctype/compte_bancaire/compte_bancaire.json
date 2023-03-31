@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{nom_compte}-{banque}",
  "creation": "2023-03-29 13:21:29.747953",
  "default_view": "List",
  "doctype": "DocType",
@@ -37,6 +38,7 @@
    "label": "Compte bancaire pour entreprise "
   },
   {
+   "depends_on": "compte_pour_entreprise",
    "fieldname": "societe",
    "fieldtype": "Link",
    "label": " Societe",
@@ -143,10 +145,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-29 13:22:59.568258",
+ "modified": "2023-03-30 11:25:06.434699",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Compte bancaire",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

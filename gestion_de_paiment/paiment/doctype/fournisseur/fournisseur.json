@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:nom_du_fournisseur",
  "creation": "2023-03-29 13:03:50.786851",
  "default_view": "List",
  "doctype": "DocType",
@@ -27,7 +28,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Nom du fournisseur",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "adresse",
@@ -47,8 +49,10 @@
   {
    "fieldname": "compte_bancaire",
    "fieldtype": "Link",
-   "label": "Compte Bancaire",
-   "options": "Compte bancaire"
+   "label": "RIB",
+   "options": "Compte bancaire",
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "num\u00e9ro_didentification_fiscale_nif",
@@ -88,10 +92,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-29 13:36:31.341715",
+ "modified": "2023-03-31 10:18:35.553504",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Fournisseur",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

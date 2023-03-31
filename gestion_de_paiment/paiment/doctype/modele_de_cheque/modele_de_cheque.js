@@ -68,31 +68,31 @@ frappe.ui.form.on('Modele de cheque', {
 				<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:32.5px; left:46px">&nbsp&nbsp&nbsp&nbsp&nbsp</span>\
                 <legend style="font-size: 9px;">Payable à  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp يدفع بـ <div></div></legend>\
 				<div style="position:absolute; bottom:3px; left:30px;">\
-					<span style="display:block ;margin-top: 0.1cm;">Adresse</span>\
-					<span style="left: 0cm;position: relative;">Telephone</span><br>\
-					<span style="left: 0cm;position: relative;">date</span>\
+					<span style="display:block ;margin-top: 0.1cm;top:{{add_supp}}cm; left:{{add_gauche}}cm">Adresse</span>\
+					<span style="left: {{tel_gauche}}cm; top:{{tel_supp}}cm;position: relative;">Telephone</span><br>\
+					<span style="left: {{date_gauche}}cm;top: {{date_supp}}cm;position: relative;">date</span>\
 				</div>\
 				</fieldset>\
 				<fieldset style="position:absolute; top:4.1cm;left:4.2cm; width: 7.2cm;height:1.9cm; text-align: center; border: 0.5px solid; " ">\
 				<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:32.5px; right:101px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>\
 				<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:32.8px; left:101px; background-color:white;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>\
-					<legend style="font-size: 9px; display: block; width: auto; padding: 0 30px;position:relative; left:10px;"> Titulaire du compte  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp صاحب الحساب</legend>\
+					<legend style="font-size: 9px; display: block; width: auto; padding: 0 30px;position:relative; left:2px;"> Titulaire du compte  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp صاحب الحساب</legend>\
 					<legend style="font-size: x-small; display: block; width: auto; padding: 0 10px; top:37px;position:absolute;left:60px"> <span style="background-color: white;">le</span></legend>\
 					<legend style="font-size: x-small; position: absolute;  bottom: 0; right: 100%;top:1cm;padding: 0 5px;background: white;width:4px"> <span style="padding-top: 35px; background-color: white;">A</span></legend>\
 					<legend style="  font-size: x-small; position: absolute;  bottom: 0; left: 70%;transform: translate(-50%, 85%);padding: 0 5px;background: white;width:4px;"> <span style="padding:0 2px; background-color:white">في</span></legend>\
 					<legend style="    font-size: x-small; position: absolute;  bottom: 0; left: 99%;transform: translate(-56%, 85%);padding: 0 1px;width:4px; background-color:white;"> <span style="padding-top: 35px; background-color: white;">بـ</span></legend>\
 						<div style="position:absolute; bottom:13px; left:70px;">\
-							<span style=" display:block ;margin-top: 0.3cm;" > Numero du compte</span>\
-							<span > Nom et Prenom </span></div>\
+							<span style=" display:block ;margin-top: 0.3cm; top:{{num_cpt_supp}}cm; left:{{num_cpt_gauche}}cm" > Numero du compte</span>\
+							<span style="position: absolute; bottom:{{nom_supp}}cm; left:{{nom_gauche}}cm"> Nom et Prenom </span></div>\
 							<span style="position:absolute;top:35px;left:20px;">Lieu</span>\
 							<span style="position:absolute;top:35px;left:120px;">Date</span>\
 							<span style="position:absolute;top:35px;left:220px;">المكان</span>\
 							</fieldset>\
 					<fieldset style="position:absolute; top:4.1cm;left:11.7cm; width: 5.6cm;height:2.1cm; text-align: center; border: 0.5px solid;">\
 					<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:32.5px; right:86px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>\
-					<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:32.8px; left:53px">&nbsp&nbsp&nbsp</span>\
+					<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:32.8px; left:68px">&nbsp&nbsp&nbsp</span>\
 						<legend style="font-size: 9px; display: block; width: auto; padding: 0 30px;position:relative;left:10px;"> Signature (s) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp الإمضاء</legend>\
-						<span style=" display:block ;" > Signature</span></fieldset>\
+						<div style="position:relative;top:{{sign_supp}}cm; left:{{sign_gauche}}cm" > Signature</div></fieldset>\
 					<span style="position: absolute; left:2.3cm ; top: 6.8cm; font-family:cmc7;font-weight:bold;font-size:12px">\
 						[7204237103108]0050011500450326{\
 					</span>\

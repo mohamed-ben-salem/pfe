@@ -288,7 +288,7 @@
   {
    "fieldname": "nom_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord inferieur"
   },
   {
    "fieldname": "nom_gauche",
@@ -412,7 +412,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-28 16:44:31.823315",
+ "modified": "2023-03-31 10:11:25.710444",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Modele de cheque",
