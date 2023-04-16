@@ -9,7 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "nom_de_la_soci\u00e9t\u00e9",
-  "abr\u00e9viation",
+  "abbr",
   "forme_juridique_de_la_soci\u00e9t\u00e9",
   "num\u00e9ro_dimmatriculation_de_la_soci\u00e9t\u00e9",
   "date_de_cr\u00e9ation_de_la_soci\u00e9t\u00e9",
@@ -29,7 +29,9 @@
   "nom_ass",
   "pre_ass",
   "column_break_bh5qh",
-  "nbre_ass"
+  "nbre_ass",
+  "section_break_gulh4",
+  "ribs"
  ],
  "fields": [
   {
@@ -83,13 +85,6 @@
   {
    "fieldname": "column_break_hlu5j",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "abr\u00e9viation",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Abr\u00e9viation",
-   "reqd": 1
   },
   {
    "fieldname": "date_de_cr\u00e9ation_de_la_soci\u00e9t\u00e9",
@@ -150,11 +145,27 @@
    "fieldname": "column_break_th1uv",
    "fieldtype": "Section Break",
    "label": "Coordonn\u00e9es des dirigeants de la soci\u00e9t\u00e9"
+  },
+  {
+   "fieldname": "ribs",
+   "fieldtype": "Table",
+   "options": "RIBS"
+  },
+  {
+   "fieldname": "section_break_gulh4",
+   "fieldtype": "Section Break",
+   "label": "Donnee bancaire"
+  },
+  {
+   "fieldname": "abbr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Abr\u00e9viation"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-30 11:02:40.924391",
+ "modified": "2023-04-13 22:24:55.800969",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Societe",

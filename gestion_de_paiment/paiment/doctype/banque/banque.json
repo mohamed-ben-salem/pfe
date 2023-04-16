@@ -11,29 +11,32 @@
   "sau_sec_1",
   "nom_bank",
   "code_bank",
+  "code_agence",
   "adresse_bank",
   "code_postal",
   "ville",
   "pays",
   "column_break_ivgbx",
-  "num\u00e9ro_de_t\u00e9l\u00e9phone",
+  "modele_de_cheque",
+  "iban",
+  "phone",
   "site_web",
   "adresse_email",
-  "bicswift",
-  "iban",
-  "modele_de_cheque"
+  "bicswift"
  ],
  "fields": [
   {
    "fieldname": "sau_sec_1",
    "fieldtype": "Section Break",
-   "label": "Coordonn\u00e9es bancaires "
+   "label": "Les coordonn\u00e9es de la banque"
   },
   {
    "fieldname": "nom_bank",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Nom de la banque",
+   "options": "Nom du banque",
    "reqd": 1,
    "unique": 1
   },
@@ -42,7 +45,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Code banque ",
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "adresse_bank",
@@ -69,28 +72,28 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "num\u00e9ro_de_t\u00e9l\u00e9phone",
-   "fieldtype": "Phone",
-   "label": "Num\u00e9ro de t\u00e9l\u00e9phone "
-  },
-  {
    "fieldname": "site_web",
    "fieldtype": "Data",
-   "label": "Site Web "
+   "label": "Site Web ",
+   "read_only": 1
   },
   {
    "fieldname": "adresse_email",
    "fieldtype": "Data",
-   "label": "Adresse email "
+   "label": "Adresse email ",
+   "read_only": 1
   },
   {
    "fieldname": "bicswift",
    "fieldtype": "Data",
-   "label": "BIC/SWIFT"
+   "in_list_view": 1,
+   "label": "BIC/SWIFT",
+   "read_only": 1
   },
   {
    "fieldname": "iban",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "IBAN"
   },
   {
@@ -98,11 +101,22 @@
    "fieldtype": "Link",
    "label": "Modele de cheque",
    "options": "Modele de cheque"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Num\u00e9ro de t\u00e9l\u00e9phone ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "code_agence",
+   "fieldtype": "Data",
+   "label": "Code agence"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-30 11:06:05.171786",
+ "modified": "2023-04-12 23:38:58.536921",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Banque",

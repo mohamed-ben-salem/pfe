@@ -51,7 +51,7 @@ def create_or_update_modele_du_cheque(template_name):
 
 </style>
 <div style="position: relative;">
-			<div style="position: relative; height: 8cm;width:17.7cm;">
+			<div style="position: relative; height: 8cm;width:17.7cm; top : %(a4_supp)scm">
 			<div style="width:  %(largeur_du_cheque)scm; 
 				height: %(hauteur_du_cheque)scm;">
 				<img src="%(logo)s" style="position: absolute; left: %(logo_gauche)scm; bottom: %(logo_inf)scm;"/>
@@ -168,6 +168,7 @@ def create_or_update_modele_du_cheque(template_name):
 		"lieu_gauche": doc.lieu_gauche,
 		"date_supp": doc.date_supp,
 		"date_gauche": doc.date_gauche,
+		"a4_supp":doc.a4_supp,
 	}
 
 	cheque_print.save(ignore_permissions=True)

@@ -4,6 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class Societe(Document):
-	def validate_abbr(self):
-		self.abbr = "".join(c[0] for c in self.nom_de_la_société.split()).upper()
+class RIBS(Document):
+	pass

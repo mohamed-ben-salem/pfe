@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{nom_compte}-{banque}",
+ "autoname": "format:{nom_compte}",
  "creation": "2023-03-29 13:21:29.747953",
  "default_view": "List",
  "doctype": "DocType",
@@ -21,14 +21,15 @@
   "iban",
   "rib",
   "devise",
-  "sau_col_5",
-  "code_branche",
-  "num_compte",
-  "date_ouverture",
   "saut_sec_6",
+  "sau_col_5",
   "type_de_tiers",
   "saut_col_6",
-  "tiers"
+  "tiers",
+  "section_break_uxke2",
+  "code_branche",
+  "num_compte",
+  "date_ouverture"
  ],
  "fields": [
   {
@@ -141,11 +142,15 @@
    "fieldtype": "Dynamic Link",
    "label": "Tiers ",
    "options": "type_de_tiers"
+  },
+  {
+   "fieldname": "section_break_uxke2",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-30 11:25:06.434699",
+ "modified": "2023-04-11 10:23:49.212663",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Compte bancaire",

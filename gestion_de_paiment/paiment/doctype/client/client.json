@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:nom_du_client",
+ "creation": "2023-04-03 10:13:07.595957",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom_du_client",
+  "adresse",
+  "cin",
+  "column_break_31jrp",
+  "raison_social",
+  "rne",
+  "adresse_email",
+  "section_break_p2dll",
+  "ribs",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom_du_client",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom du Client",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "adresse",
+   "fieldtype": "Data",
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "cin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CIN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "raison_social",
+   "fieldtype": "Data",
+   "label": "Raison social"
+  },
+  {
+   "fieldname": "column_break_31jrp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rne",
+   "fieldtype": "Data",
+   "label": "RNE"
+  },
+  {
+   "fieldname": "adresse_email",
+   "fieldtype": "Data",
+   "label": "Adresse email "
+  },
+  {
+   "fieldname": "section_break_p2dll",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ribs",
+   "fieldtype": "Table",
+   "label": "Les donnes bancaires",
+   "options": "RIBS"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-13 21:58:50.629899",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "Client",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

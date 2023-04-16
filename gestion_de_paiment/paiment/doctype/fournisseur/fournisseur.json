@@ -10,16 +10,18 @@
  "field_order": [
   "nom_du_fournisseur",
   "adresse",
+  "cin",
+  "raison_social",
   "column_break_31jrp",
+  "rne",
   "adresse_email",
   "site_web",
   "section_break_p2dll",
-  "compte_bancaire",
-  "section_break_gvx1w",
   "num\u00e9ro_didentification_fiscale_nif",
   "column_break_8hobl",
   "tva",
   "section_break_nuhpa",
+  "ribs",
   "notes"
  ],
  "fields": [
@@ -47,14 +49,6 @@
    "label": "Site web"
   },
   {
-   "fieldname": "compte_bancaire",
-   "fieldtype": "Link",
-   "label": "RIB",
-   "options": "Compte bancaire",
-   "read_only": 1,
-   "reqd": 1
-  },
-  {
    "fieldname": "num\u00e9ro_didentification_fiscale_nif",
    "fieldtype": "Data",
    "label": "Num\u00e9ro d'identification fiscale (NIF) "
@@ -78,21 +72,38 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "section_break_gvx1w",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "column_break_8hobl",
    "fieldtype": "Column Break"
   },
   {
    "fieldname": "section_break_nuhpa",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cin",
+   "fieldtype": "Data",
+   "label": "CIN"
+  },
+  {
+   "fieldname": "raison_social",
+   "fieldtype": "Data",
+   "label": "Raison social"
+  },
+  {
+   "fieldname": "rne",
+   "fieldtype": "Data",
+   "label": "RNE"
+  },
+  {
+   "fieldname": "ribs",
+   "fieldtype": "Table",
+   "label": "RIBS",
+   "options": "RIBS"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-31 10:18:35.553504",
+ "modified": "2023-04-03 09:54:26.004249",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Fournisseur",

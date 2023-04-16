@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:nom_de_la_depense",
+ "creation": "2023-04-03 10:53:19.241664",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom_de_la_depense",
+  "type_de_tiers",
+  "status",
+  "tiers",
+  "montant_net",
+  "devise",
+  "section_break_nyv2c",
+  "r\u00e9f\u00e9rence",
+  "nature_de_d\u00e9pense",
+  "service_\u00e9metteur_de_la_d\u00e9pense",
+  "mode_de_r\u00e9glement",
+  "ribss"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_de_tiers",
+   "fieldtype": "Link",
+   "label": "Type de tiers",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "tiers",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Tiers",
+   "options": "type_de_tiers"
+  },
+  {
+   "fieldname": "montant_net",
+   "fieldtype": "Data",
+   "label": "Montant net "
+  },
+  {
+   "fieldname": "devise",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Devise",
+   "options": "Devise"
+  },
+  {
+   "fieldname": "r\u00e9f\u00e9rence",
+   "fieldtype": "Data",
+   "label": "R\u00e9f\u00e9rence"
+  },
+  {
+   "fieldname": "nature_de_d\u00e9pense",
+   "fieldtype": "Link",
+   "label": "Nature de d\u00e9pense",
+   "options": "Natures"
+  },
+  {
+   "fieldname": "service_\u00e9metteur_de_la_d\u00e9pense",
+   "fieldtype": "Link",
+   "label": "Service \u00e9metteur de la d\u00e9pense",
+   "options": "Service"
+  },
+  {
+   "fieldname": "mode_de_r\u00e9glement",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mode de r\u00e9glement",
+   "options": "Modele de cheque\nVirement"
+  },
+  {
+   "fieldname": "section_break_nyv2c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "status",
+   "options": "\nCREE\nEMISE\nVALIDEE"
+  },
+  {
+   "fieldname": "ribss",
+   "fieldtype": "Table",
+   "label": "Les donnees bancaire",
+   "options": "RIB_depenses"
+  },
+  {
+   "fieldname": "nom_de_la_depense",
+   "fieldtype": "Data",
+   "label": "Nom de la depense",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-15 18:14:13.015743",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "Depenses",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
