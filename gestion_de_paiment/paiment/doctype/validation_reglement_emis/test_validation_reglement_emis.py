@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestDevise(FrappeTestCase):
+class TestValidationReglementEmis(FrappeTestCase):
 	pass

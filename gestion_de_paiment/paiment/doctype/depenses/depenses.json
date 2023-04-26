@@ -12,7 +12,6 @@
   "type_de_tiers",
   "status",
   "tiers",
-  "montant_net",
   "devise",
   "section_break_nyv2c",
   "r\u00e9f\u00e9rence",
@@ -25,6 +24,7 @@
   {
    "fieldname": "type_de_tiers",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Type de tiers",
    "options": "DocType"
   },
@@ -34,11 +34,6 @@
    "in_list_view": 1,
    "label": "Tiers",
    "options": "type_de_tiers"
-  },
-  {
-   "fieldname": "montant_net",
-   "fieldtype": "Data",
-   "label": "Montant net "
   },
   {
    "fieldname": "devise",
@@ -57,21 +52,22 @@
   {
    "fieldname": "nature_de_d\u00e9pense",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Nature de d\u00e9pense",
    "options": "Natures"
   },
   {
    "fieldname": "service_\u00e9metteur_de_la_d\u00e9pense",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Service \u00e9metteur de la d\u00e9pense",
    "options": "Service"
   },
   {
    "fieldname": "mode_de_r\u00e9glement",
-   "fieldtype": "Select",
-   "in_list_view": 1,
+   "fieldtype": "Data",
    "label": "Mode de r\u00e9glement",
-   "options": "Modele de cheque\nVirement"
+   "read_only": 1
   },
   {
    "fieldname": "section_break_nyv2c",
@@ -94,6 +90,7 @@
   {
    "fieldname": "nom_de_la_depense",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Nom de la depense",
    "reqd": 1,
    "unique": 1
@@ -101,7 +98,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-15 18:14:13.015743",
+ "modified": "2023-04-20 12:14:13.309645",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Depenses",

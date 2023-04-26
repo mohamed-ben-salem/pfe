@@ -1,0 +1,10 @@
+@font-face {
+    font-family: myFont;
+    src: url('gestion_de_paiment/paiment/doctype/modele_de_cheque/CMC7____.TTF');
+  }
+  
+  .cmc7 {
+    font-family: myFont;
+    color: green;
+  }
+  

@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-19 09:52:57.723204",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom_de_la_depense",
+  "devise",
+  "type_de_tiers",
+  "tiers",
+  "montant_net",
+  "nature_de_d\u00e9pense",
+  "service_\u00e9metteur_de_la_d\u00e9pense"
+ ],
+ "fields": [
+  {
+   "fieldname": "devise",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Devise ",
+   "options": "Devise",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nom_de_la_depense",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Nom de depense ",
+   "options": "Depenses",
+   "read_only": 1
+  },
+  {
+   "fieldname": "type_de_tiers",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Type de tiers ",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tiers",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Tiers",
+   "options": "type_de_tiers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "montant_net",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Montant net ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nature_de_d\u00e9pense",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Nature de d\u00e9pense ",
+   "options": "Natures",
+   "read_only": 1
+  },
+  {
+   "fieldname": "service_\u00e9metteur_de_la_d\u00e9pense",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Service \u00e9metteur de la d\u00e9pense ",
+   "options": "Service",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-20 10:41:51.140850",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "Reglement depense",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

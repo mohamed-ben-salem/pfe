@@ -13,18 +13,28 @@ frappe.ui.form.on('Emision Reglement', {
                         "banque" : row.banque,
                         "compte_bancaire" : row.cpt_banquaire,
                         "par_defaut" : row.par_defaut
-
                     }
                     items.push(item)
                 });
-                console.log(items)
                 frm.set_value("ribss", items);
                 frm.refresh_field("ribss");
             });  
             items = [];
         }
-    }
+    },
+    refresh: function(frm) {
+        console.log(frm.liste_depense)    }
 
+    
+
+});
+
+frappe.ui.form.on("Reglement depense", "tiers", function(frm, cdt, cdn) {
+    var d = locals[cdt][cdn];
+         
+        console.log(d.tiers)
+           
+        
 });
 	
 

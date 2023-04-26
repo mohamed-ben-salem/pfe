@@ -1,31 +1,41 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:devise",
- "creation": "2023-04-15 18:11:44.925587",
+ "autoname": "field:nom",
+ "creation": "2023-04-25 11:14:43.476315",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "devise"
+  "nom",
+  "prenom",
+  "age"
  ],
  "fields": [
   {
-   "fieldname": "devise",
+   "fieldname": "nom",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Devise",
-   "reqd": 1,
+   "label": "nom",
    "unique": 1
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "prenom"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "age"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-15 18:11:44.925587",
+ "modified": "2023-04-25 11:14:43.476315",
  "modified_by": "Administrator",
  "module": "paiment",
- "name": "Devise",
+ "name": "importTest",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
@@ -42,7 +52,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

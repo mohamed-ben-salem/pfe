@@ -1,32 +1,29 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:devise",
- "creation": "2023-04-15 18:11:44.925587",
+ "creation": "2023-04-18 22:18:38.691694",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "devise"
+  "date_validation"
  ],
  "fields": [
   {
-   "fieldname": "devise",
-   "fieldtype": "Data",
+   "fieldname": "date_validation",
+   "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Devise",
-   "reqd": 1,
-   "unique": 1
+   "label": "Date de validation",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-15 18:11:44.925587",
+ "modified": "2023-04-18 22:18:38.691694",
  "modified_by": "Administrator",
  "module": "paiment",
- "name": "Devise",
- "naming_rule": "By fieldname",
+ "name": "Validation Reglement Emis",
  "owner": "Administrator",
  "permissions": [
   {
@@ -42,7 +39,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

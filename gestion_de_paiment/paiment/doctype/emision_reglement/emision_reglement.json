@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{name}{##}",
+ "autoname": "field:name1",
  "creation": "2023-04-12 15:55:04.932019",
  "default_view": "List",
  "doctype": "DocType",
@@ -10,13 +10,21 @@
  "field_order": [
   "name1",
   "societe",
+  "mode_de_r\u00e9glement",
+  "column_break_kfmee",
+  "r\u00e9f\u00e9rence_du_virement",
+  "date_emission",
+  "num\u00e9ro_de_ch\u00e9que",
+  "section_break_2ujei",
+  "liste_depense",
   "ribss"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "name"
+   "label": "name",
+   "unique": 1
   },
   {
    "default": "Tunisie Nouvelles technologie",
@@ -30,15 +38,51 @@
    "fieldtype": "Table",
    "label": "Donnees Bancaire",
    "options": "test"
+  },
+  {
+   "fieldname": "liste_depense",
+   "fieldtype": "Table",
+   "label": "Liste depense",
+   "options": "Reglement depense"
+  },
+  {
+   "fieldname": "mode_de_r\u00e9glement",
+   "fieldtype": "Select",
+   "label": "Mode de r\u00e9glement",
+   "options": "Modele de cheque\nVirement"
+  },
+  {
+   "fieldname": "column_break_kfmee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "r\u00e9f\u00e9rence_du_virement",
+   "fieldtype": "Data",
+   "label": "r\u00e9f\u00e9rence du virement"
+  },
+  {
+   "fieldname": "date_emission",
+   "fieldtype": "Date",
+   "label": "Date emission",
+   "read_only": 1
+  },
+  {
+   "fieldname": "num\u00e9ro_de_ch\u00e9que",
+   "fieldtype": "Data",
+   "label": "Num\u00e9ro de ch\u00e9que "
+  },
+  {
+   "fieldname": "section_break_2ujei",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-14 10:35:28.835309",
+ "modified": "2023-04-24 12:52:16.067762",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Emision Reglement",
- "naming_rule": "Expression",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -56,5 +100,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

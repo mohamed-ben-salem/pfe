@@ -6,23 +6,24 @@ from frappe.model.document import Document
 
 class Comptebancaire(Document):
 	def on_update(self):
-            if self.type_de_tiers == 'Fournisseur':
-                Fournisseur = frappe.get_doc("Fournisseur",self.tiers)
-                row=Fournisseur.append("ribs", {})
-                row.rib=self.rib
-                row.banque = self.banque
-                row.cpt_banquaire = self.nom_compte
-                Fournisseur.save()
+            if self.type_du_compte == "Compte courant":
+                if self.type_de_tiers == 'Fournisseur':
+                    Fournisseur = frappe.get_doc("Fournisseur",self.tiers)
+                    row=Fournisseur.append("ribs", {})
+                    row.rib=self.rib
+                    row.banque = self.banque
+                    row.cpt_banquaire = self.nom_compte
+                    Fournisseur.save()
 
-            elif self.type_de_tiers == 'Client':
-                Client = frappe.get_doc("Client",self.tiers)
-                row=Client.append("ribs", {})
-                row.rib=self.rib
-                row.banque = self.banque
-                row.cpt_banquaire = self.nom_compte
-                Client.save()
+                elif self.type_de_tiers == 'Client':
+                    Client = frappe.get_doc("Client",self.tiers)
+                    row=Client.append("ribs", {})
+                    row.rib=self.rib
+                    row.banque = self.banque
+                    row.cpt_banquaire = self.nom_compte
+                    Client.save()
 
-            elif self.compte_pour_entreprise == 1:
+            elif self.type_du_compte == "Compte bancaire pour entreprise":
 
                 Societe = frappe.get_doc("Societe",self.societe)
                 row=Societe.append("ribs", {})

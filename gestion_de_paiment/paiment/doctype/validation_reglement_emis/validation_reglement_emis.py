@@ -1,8 +1,8 @@
 # Copyright (c) 2023, Mohamed Ben Salem && Samar Othmeni and contributors
 # For license information, please see license.txt
 
-# import frappe
+import frappe
 from frappe.model.document import Document
 
-class Devise(Document):
+class ValidationReglementEmis(Document):
 	pass

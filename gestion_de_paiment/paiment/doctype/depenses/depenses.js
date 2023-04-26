@@ -2,12 +2,7 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Depenses', {
-	refresh: function(frm) {
-		frm.add_custom_button('Emission Reglement', () => {
-			frappe.new_doc('Emision Reglement', {
-			})
-            console.log('clicked');})
-	},
+	
 	setup: function(frm) {
         frm.set_query("type_de_tiers", function() {
             return {
