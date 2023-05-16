@@ -38,7 +38,8 @@
   {
    "fieldname": "responsable",
    "fieldtype": "Data",
-   "label": "Responsable"
+   "label": "Responsable",
+   "options": "Name"
   },
   {
    "fieldname": "adresse",
@@ -53,7 +54,8 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "options": "Email"
   },
   {
    "fieldname": "description",
@@ -76,7 +78,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-29 09:18:03.860436",
+ "modified": "2023-05-13 13:11:26.382251",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Service",

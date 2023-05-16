@@ -18,7 +18,7 @@ def create_or_update_modele_du_cheque(template_name):
 		cheque_print = frappe.new_doc("Print Format")
 		cheque_print.update(
 			{
-				"doc_type": "Payment Entry",
+				"doc_type": "Cheque",
 				"standard": "No",
 				"custom_format": 1,
 				"print_format_type": "Jinja",
@@ -47,96 +47,122 @@ def create_or_update_modele_du_cheque(template_name):
 	.cmc7 {
 		font-family: 'cmc7';
 	}
+	.print-format p{
+	margin:3px 0px 14px;
+	text-align: justify;
+	font-size:13px;
+	}
+	legend{
+		border:none;
+		margin-bottom:0px;
+	}
 	
 
 </style>
 <div style="position: relative;">
-			<div style="position: relative; height: 8cm;width:17.7cm; top : %(a4_supp)scm">
-			<div style="width:  %(largeur_du_cheque)scm; 
-				height: %(hauteur_du_cheque)scm;">
-				<img src="%(logo)s" style="position: absolute; left: %(logo_gauche)scm; bottom: %(logo_inf)scm;"/>
-				<span style="top:%(num_supp)scm;
-                left: %(num_gauche)scm;
-                position: absolute; font-weight:bolder;"> 7204237 </span>
-				<span style="top:0.9cm;
-                left: 0.3cm;
-                position: absolute; font-size: x-small; letter-spacing:0.8px; font-family: 'Noto Naskh Arabic', serif;">عدد الصك</span>
-				<span style="top:1.18cm;
-                left: 0.3cm;
-                position: absolute;font-size: x-small;">Nº du cheque </span>
-				<span style="top:0.9cm;
-                left: 12.5cm;
-                position: absolute;font-size: 8px;">B.P.D</span>
-				<span style="top:%(chiff_sup)scm;
-                left: %(chiff_gauche)scm;
-                position: absolute; font-weight: bold;"> Montant en chiffre</span>
-				<span style="top:0.9cm;
-                left: 17.05cm;
-                position: absolute;font-size: x-small;font-family: 'Noto Naskh Arabic', serif;">م.د</span>
-				<span style="top:2.19cm;
-                left: 0.3cm;
-                position: absolute; font-size:10px;">Payer contre ce chèque non endossable</span>
-				<span style="top:2.55cm;
-                left: 0.3cm;
-                position: absolute;font-size: 7.7px;">Sauf au profit d une banque d un organisme assimilé</span>
-				<span style="top:%(lettre_supp)scm;
-                left: %(lettre_gauche)scm;
-                position: absolute;
-                width: %(largeur_du_montant_en_mot)scm;
-                line-height:%(line_spacing_for_amount_in_words)scm;
-                font-weight: bold;" > Montant en lettre</span>
-				<span style="top:2.2cm;
-                left: 13.49cm;
-                position: absolute;font-size:10px;width:4.8cm;font-family: 'Noto Naskh Arabic', serif;">إدفعوا مقابل هذا الصك غير القابل للتّظهير</span>
-				<span style="top:2.55cm;
-                left: 13.7cm;
-                position: absolute;font-size:10px; letter-spacing: 0.25px;font-family: 'Noto Naskh Arabic', serif;">إلاّ لفائدة مصرف أو مؤثة ماليّة مماثلة</span>
-				<span style="top:3.5cm;
-                left: 0.3cm;
-                position: absolute;font-size:10.7px;">A l ordre de</span>
-				<span style="top:%(ben_supp)scm;
-                left: %(ben_gauche)scm;
-                position: absolute;font-size:12.5px; font-weight: bold;">Bénéficiaire</span>
-				<span style="top:3.5cm;
-                left: 16.9cm;
-                position: absolute;font-size:11px;font-family: 'Noto Naskh Arabic', serif;">لأمر</span>
-				<fieldset style="position:absolute; top:4.1cm; left:0.3cm; text-align: center;width: 3.5cm; height: 2.3cm; border: 0.5px solid;">
-				<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:42.5px; right:46.33px">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-				<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:42.5px; left:46.33px">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-                <legend style="font-size: 9px;border:none;">Payable à  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp يدفع بـ <div></div></legend>
-				<div style="position:absolute; bottom:8px; left:30px;">
-					<span style="display:block ;margin-top: 0.1cm;border:none;">Adresse</span>
-					<span style="left: 0cm;position: relative;">Telephone</span><br>
-					<span style="left: 0cm;position: relative;">date</span>
-				</div>
-				</fieldset>
-				<fieldset style="position:absolute; top:4.1cm;left:4.2cm; width: 7.2cm;height:2.1cm; text-align: center; border: 0.5px solid; " ">
-				<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:42.5px; right:119.7px"">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-					<legend style="font-size: 9px; display: block; width: auto; padding: 0 30px;position:relative; left:10px;border:none;"> Titulaire du compte  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp صاحب الحساب</legend>
-					<legend style="font-size: x-small; display: block; width: auto; padding: 0 10px; top:0.95cm;position:absolute;left:60px; border:none;"> <span style="padding:0 2px; background-color:white">le</span></legend>
-					<legend style="font-size: x-small; position: absolute;  bottom: 0; right: 267px;top:0.95cm;padding: 0 5px;background: white;width:4px;border:none;"> <span style="padding-top: 35px; background-color: white;">A</span></legend>
-					<legend style="font-size: x-small; display: block; width: auto; padding: 0 10px; top:0.95cm;position:absolute;left:170px;border:none;"> <span style="padding:0 2px; background-color:white">في</span></legend>
-					<legend style="font-size: x-small; display: block; width: auto; padding: 0 3px; top:0.95cm;position:absolute;left:263px;background-color:white;border:none;"> <span style="padding-top: 35px; background-color: white;">بـ</span></legend>
-						<div style="position:absolute; bottom:21px; left:70px;">
-							<span style=" display:block ;margin-top: 0.3cm;border:none;" > Numero du compte</span>
-							<span > Nom et Prenom </span></div>
-							<span style="position:absolute;top:0.84cm;left:20px;">Lieu</span>
-							<span style="position:absolute;top:0.84cm;left:120px;">Date</span>
-							<span style="position:absolute;top:0.84cm;left:220px;">المكان</span>
-							</fieldset>
-					<fieldset style="position:absolute; top:4.1cm;left:11.7cm; width: 5.6cm;height:2.3cm; text-align: center; border: 0.5px solid;">
-					<span style="position:relative; border-bottom:0.5px solid; width:0.4px;bottom:42.9px; right:49px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-					<span style="position:relative; border-left:0.5px solid; width:0.4px;bottom:28.75px; right:77.5px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+	<div style="position:relative; padding:30px; top:80px;">
+		<p>Date: <strong>{{doc.date}}</strong><br>
+		À <strong>{{doc.benificiare}}</strong><br>
+		<strong>{{doc.adresse_du_agence}}</strong>
+		</p>
+		
+		
+		<p><strong>Objet : Émission d'un chèque</strong></p>
+		<p>Madame, Monsieur,</p>
+		<p>Je soussigné(e) <strong>{{doc.titulaire_du_compte}}</strong>, titulaire du compte n°<strong> {{doc.numero_du_compte}}</strong>, demande l'émission d'un chèque d'un montant de <strong>{{frappe.utils.money_in_words(doc.montant_net)}}</strong> (en chiffres : {{doc.montant_net}} TND).</p>
+		<p>Le bénéficiaire du chèque est <strong>{{doc.benificiare}}</strong>, et l'objet de ce chèque est [précisez l'objet du chèque, par exemple "paiement de facture"].</p>
+		<p>Je vous prie de bien vouloir débiter mon compte du montant de ce chèque et de l'envoyer directement au bénéficiaire à l'adresse suivante : <strong>{{doc.lieu}}</strong>.</p>
+		<p>Je vous remercie de votre attention et vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.</p>
+		<p>Signature : <img src = {{doc.signature}} style="max-width:250px;"/></p>
+		<p><strong>{{doc.titulaire_du_compte}}</strong></p>
+	</div>
+		<div style="position: relative;top: %(a4_supp)scm; left:1.5cm;" >
+    <div style="position: relative; height: 8cm;width:17.7cm;">
+        <div style="width:  %(largeur_du_cheque)s cm; 
+            height: %(hauteur_du_cheque)s cm;">
+            <img src="%(logo)s "style="position: absolute; left: %(logo_gauche)scm; bottom: %(logo_inf)scm;"/>
+            <span style="top:%(num_supp)scm;
+            left: %(num_gauche)scm;
+            position: absolute; font-weight:bolder;"> {{doc.num_de_cheque}} </span>
+            <span style="top:0.9cm;
+            left: 0.3cm;
+            position: absolute; font-size: x-small; letter-spacing:0.8px">عدد الصك</span>
+            <span style="top:1.18cm;
+            left: 0.3cm;
+            position: absolute;font-size: x-small;">Nº du cheque </span>
+            <span style="top:0.9cm;
+            left: 12.5cm;
+            position: absolute;font-size: 8px;">B.P.D</span>
+            <span style="top:%(chiff_sup)scm;
+            left: %(chiff_gauche)scm;
+            position: absolute; font-weight: bold;"> {{doc.montant_net}} TND²</span>
+            <span style="top:0.9cm;
+            left: 17.1cm;
+            position: absolute;font-size: x-small;">م.د</span>
+            <span style="top:2.19cm;
+            left: 0.3cm;
+            position: absolute; font-size:10.7px;">Payer contre ce chèque non endossable</span>
+            <span style="top:2.55cm;
+            left: 0.3cm;
+            position: absolute;font-size: 8px;">Sauf au profit d une banque d un organisme assimilé</span>
+            <span style="top:%(lettre_supp)scm;
+            left: %(lettre_gauche)scm;
+            position: absolute;
+            width: auto;
+            line-height:%(line_spacing_for_amount_in_words)scm;
+            font-weight: bold; font-size : 10px;" > {{frappe.utils.money_in_words(doc.montant_net)}}</span>
+            <span style="top:2.2cm;
+            left: 13cm;
+            position: absolute;font-size:10px;width:4.8cm;">إدفعوا مقابل هذا الصك غير القابل للتّظهير</span>
+            <span style="top:2.55cm;
+            left: 13.3cm;
+            position: absolute;font-size:10px; letter-spacing: 0.25px;">إلاّ لفائدة مصرف أو مؤثة ماليّة مماثلة</span>
+            <span style="top:3.5cm;
+            left: 0.3cm;
+            position: absolute;font-size:10.7px;">A l ordre de</span>
+            <span style="top:%(ben_supp)scm;
+            left: %(ben_gauche)scm;
+            position: absolute;font-size:12.5px; font-weight: bold;">{{doc.benificiare}}</span>
+            <span style="top:3.5cm;
+            left: 16.9cm;
+            position: absolute;font-size:11px;">لأمر</span>
+            <fieldset style="position:absolute; top:%(filedset_pay_supp)scm; left:%(filedset_pay_gauche)scm; text-align: center;width: 3.5cm; height: 2.1cm; border: 0.5px solid;">
+            <legend style="font-size: 9px;padding: 0 5px; bottom:%(payable_supp)scm; left:%(payable_gauche)scm; width:auto; position:absolute; background-color:white;margin:0px ">Payable à  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp يدفع بـ</legend>
+            <div style="position:absolute; bottom:3px; left:30px;">
+                <span style=" margin-top: 0.1cm;bottom:%(add_supp)scm; left:%(add_gauche)scm; position:absolute">{{doc.adresse_du_agence}}</span>
+                <span style="left: %(tel_gauche)scm; bottom:%(tel_supp)scm;position: absolute;">{{doc.telephone_du_agence}}</span>
+                <span style="left: %(date_cpt_gauche)scm; bottom: %(date_cpt_supp)scm;position: absolute; width: 67px;">{{doc.date_de_creation_du_compte}}</span>
+            </div>
+            </fieldset>
+            <fieldset style="position:absolute; top:%(payable_f_supp)scm;left:%(payable_f_gauche)scm; width: 7.2cm;height:1.9cm; text-align: center; border: 0.5px solid; " ">
+                <legend style="font-size: 9px;  width: 200px; padding: 0 5px;position:absolute; left:%(legend_pay_gauche)scm; bottom:%(legend_pay_supp)scm; background-color:white"> Titulaire du compte  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp صاحب الحساب</legend>
+                <legend style="font-size: x-small;  width: auto; padding: 0 5px; top:%(legend_le_supp)scm;position:absolute;left:%(legend_le_gauche)scm"> <span style="background-color: white;">le</span></legend>
+                <legend style="font-size: x-small; position: absolute;   right: %(legend_a_droit)scm;top:%(legend_a_supp)scm;padding: 0 5px;background: white;width:auto"> <span style="background-color: white;">A</span></legend>
+                <legend style=" font-size: x-small; position: absolute;   left: %(legend_fi_gauche)scm;top: %(legend_fi_supp)scm; padding: 0 5px;background: white;width:auto;"> <span style="background-color:white">في</span></legend>
+                <legend style=" font-size: x-small; position: absolute;   left: %(legend_bi_gauche)scm; top: %(legend_bi_supp)scm;padding: 0 5px;width:auto; background-color:white;"> <span style=" background-color: white;">بـ</span></legend>
+                <span style="padding-top:0.6cm; background-color:white;right:3.52cm;  top:1.2cm; position:relative">&nbsp</span>
+                <span style="padding-top:0.6cm; background-color:white;left:3.52cm; top:1.2cm; position:relative">&nbsp</span>
+                    <div style="position:absolute; bottom:13px; left:70px;">
+                        <span style="  margin-top: 0.3cm; top:%(num_cpt_supp)scm; left:%(num_cpt_gauche)scm" > {{doc.numero_du_compte}}</span>
+                        <span style="position: absolute; bottom:%(nom_supp)scm; left:%(nom_gauche)scm; width : 200px;"> {{doc.titulaire_du_compte}} </span></div>
+                        <span style="position:absolute;top:%(lieu_supp)scm;left:%(lieu_gauche)scm;">{{doc.lieu}}</span>
+                        <span style="position:absolute;top:%(date_supp)scm;left:%(date_gauche)scm;">{{doc.date}}</span>
+                        <span style="position:absolute;top:%(maken_supp)scm;left:%(maken_gauche)scm;">{{doc.المكان}}</span>
+            </fieldset>
+                <fieldset style="position:absolute; top:%(container_sign_supp)scm;left:%(container_sign_gauche)scm; width: 5.6cm;height:2.1cm; text-align: center; border: 0.5px solid;">
+                    <legend style="font-size: 9px;  width: auto; padding: 0 6px; margin:0 10px;position:absolute;left:%(legend_sign_gauche)scm; background-color:white; bottom:%(legend_sign_supp)scm"> Signature (s)s &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp الإمضاء</legend>
+                    <div style="position:relative;top:%(sign_supp)scm; left:%(sign_gauche)scm" > 
+                        <img src={{doc.signature}} />
+                    </div>
+                </fieldset>
+                <span style="position: absolute; left:1.3cm ; top: 7.1cm; ">
+                    <p class="cmc7">[{{doc.num_de_cheque}}1{{doc.numero_du_compte[:5]}}]{{doc.numero_du_compte[5:]}}{</p> 
+                </span>
+        </div>
+    </div>
+</div>
 
-						<legend style="font-size: 9px; display: block; width: auto; padding: 0 30px;position:relative;left:11.74px;border:none;"> Signature (s) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp الإمضاء</legend>
-						<span style=" border:none;" > Signature</span></fieldset>
-					<span style="position: absolute; left:2.3cm ; top: 7cm;">
-						<div class="cmc7">[7204237103108]0050011500450326{</div>
-					</span>
-			</div>
-		</div>
-		</div>
-		</div>""" % {
+	</div>""" % {
 		"largeur_du_cheque": doc.largeur_du_cheque,
 		"hauteur_du_cheque": doc.hauteur_du_cheque,
 		"logo_inf": doc.logo_inf,

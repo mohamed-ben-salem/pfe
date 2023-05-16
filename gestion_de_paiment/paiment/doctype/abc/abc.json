@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2023-04-25 15:42:16.018463",
  "default_view": "List",
@@ -7,18 +8,30 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "nom"
+  "nom",
+  "prenom",
+  "age"
  ],
  "fields": [
   {
    "fieldname": "nom",
    "fieldtype": "Data",
    "label": "nom"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "age"
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "prenom"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-25 15:42:16.018463",
+ "modified": "2023-04-28 10:05:36.431185",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "abc",

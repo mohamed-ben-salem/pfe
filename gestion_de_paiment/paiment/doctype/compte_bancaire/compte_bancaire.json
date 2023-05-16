@@ -24,7 +24,8 @@
   "devise",
   "code_branche",
   "num_compte",
-  "date_ouverture"
+  "date_ouverture",
+  "signature"
  ],
  "fields": [
   {
@@ -119,11 +120,16 @@
    "fieldname": "societe_section",
    "fieldtype": "Section Break",
    "label": "D\u00e9tails du Societe"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-22 13:46:48.486234",
+ "modified": "2023-05-15 11:30:37.950918",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Compte bancaire",

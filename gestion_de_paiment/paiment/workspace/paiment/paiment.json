@@ -1,0 +1,45 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"SzphiniMap\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">paiment</span>\",\"col\":12}},{\"id\":\"SLWaRHs1TV\",\"type\":\"card\",\"data\":{\"card_name\":\"cheque\",\"col\":4}}]",
+ "creation": "2023-05-04 10:59:17.118127",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "money-coins-1",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "paiment",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "cheque",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "cheque",
+   "link_count": 0,
+   "link_to": "Cheque",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-05-13 21:14:28.437152",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "paiment",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 31.0,
+ "shortcuts": [],
+ "title": "paiment"
+}

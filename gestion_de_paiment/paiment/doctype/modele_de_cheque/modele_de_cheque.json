@@ -146,14 +146,18 @@
    "options": "<div>\n<h5> pour les lettres </h5>\n</div>"
   },
   {
+   "default": "5",
    "fieldname": "largeur_du_montant_en_mot",
    "fieldtype": "Float",
-   "label": "Largeur du montant en mot"
+   "label": "Largeur du montant en mot",
+   "precision": "2"
   },
   {
+   "default": "1",
    "fieldname": "line_spacing_for_amount_in_words",
    "fieldtype": "Float",
-   "label": "Interligne pour le montant en toutes lettres"
+   "label": "Interligne pour le montant en toutes lettres",
+   "precision": "2"
   },
   {
    "fieldname": "chiffre",
@@ -181,13 +185,15 @@
    "default": "3.5",
    "fieldname": "ben_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
    "default": "2.5",
    "fieldname": "ben_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "collapsible": 1,
@@ -196,16 +202,18 @@
    "label": "Signature"
   },
   {
-   "default": "0",
+   "default": "0.5",
    "fieldname": "sign_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
-   "default": "0",
+   "default": "0.5",
    "fieldname": "sign_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "collapsible": 1,
@@ -219,16 +227,18 @@
    "options": "<div>\n<h5> Adresse du banque </h5>\n</div>"
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "add_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
-   "default": "0",
+   "default": "0.2",
    "fieldname": "add_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "column_break_mtrmc",
@@ -240,14 +250,18 @@
    "options": "<div>\n<h5> Telephone du banque </h5>\n</div>"
   },
   {
+   "default": "0.5",
    "fieldname": "tel_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "0",
    "fieldname": "tel_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "column_break_3t5ec",
@@ -259,24 +273,32 @@
    "options": "<div>\n<h5> Date de creation du compte </h5>\n</div>"
   },
   {
+   "default": "1.5",
    "fieldname": "date_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "2.6",
    "fieldname": "date_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
+   "default": "0.1",
    "fieldname": "date_cpt_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "0.5",
    "fieldname": "date_cpt_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "collapsible": 1,
@@ -292,12 +314,14 @@
   {
    "fieldname": "num_cpt_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
    "fieldname": "num_cpt_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "column_break_bbnir",
@@ -309,14 +333,17 @@
    "options": "<div>\n<h5> Nom et Prenon</h5>\n</div>"
   },
   {
+   "default": "0.5",
    "fieldname": "nom_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord inferieur"
+   "label": "Distance du bord inferieur",
+   "precision": "2"
   },
   {
    "fieldname": "nom_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "column_break_a8aty",
@@ -328,14 +355,18 @@
    "options": "<div>\n<h5> Lieu </h5>\n</div>"
   },
   {
+   "default": "1.5",
    "fieldname": "lieu_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "0.5",
    "fieldname": "lieu_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "column_break_xm88r",
@@ -355,56 +386,65 @@
    "default": "1.1",
    "fieldname": "num_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
-   "default": "2",
+   "default": "2.3",
    "fieldname": "num_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "collapsible": 1,
    "default": "0.79",
    "fieldname": "chiff_sup",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
    "default": "13.3",
    "fieldname": "chiff_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "default": "2.4",
    "fieldname": "lettre_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
    "default": "6.5",
    "fieldname": "lettre_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "default": "6.4",
    "fieldname": "logo_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche6.4"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche6.4",
+   "precision": "2"
   },
   {
    "default": "17.7",
    "fieldname": "largeur_du_cheque",
    "fieldtype": "Float",
-   "label": "largeur du ch\u00e9que"
+   "label": "largeur du ch\u00e9que",
+   "precision": "2"
   },
   {
    "default": "8",
    "fieldname": "hauteur_du_cheque",
    "fieldtype": "Float",
-   "label": "hauteur du ch\u00e9que"
+   "label": "hauteur du ch\u00e9que",
+   "precision": "2"
   },
   {
    "fieldname": "cheque_print_preview",
@@ -414,7 +454,8 @@
    "default": "5.9",
    "fieldname": "logo_inf",
    "fieldtype": "Float",
-   "label": "Distance du bord inferieur"
+   "label": "Distance du bord inferieur",
+   "precision": "2"
   },
   {
    "fieldname": "taille_de_cheque",
@@ -423,10 +464,12 @@
    "options": "Regulier\nA4"
   },
   {
+   "default": "6",
    "depends_on": "eval:doc.taille_de_cheque==\"A4\"",
    "fieldname": "a4_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
    "fieldname": "container_sign",
@@ -434,14 +477,18 @@
    "label": "fildset signature"
   },
   {
+   "default": "4.26",
    "fieldname": "container_sign_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "11.7",
    "fieldname": "container_sign_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "signature_legend_column",
@@ -449,23 +496,29 @@
    "label": "Signature legend"
   },
   {
+   "default": "2",
    "fieldname": "legend_sign_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "0.85",
    "fieldname": "legend_sign_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "section_break_s1ea1",
    "fieldtype": "Section Break"
   },
   {
+   "default": "1.9",
    "fieldname": "payable_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
    "fieldname": "legende_payable_a",
@@ -473,9 +526,11 @@
    "options": "<div>\n<h5> Legende payable a </h5>\n</div>"
   },
   {
+   "default": "0.5",
    "fieldname": "payable_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "column_break_xvqo3",
@@ -487,14 +542,18 @@
    "options": "<div>\n<h5> Fieldset </h5>\n</div>"
   },
   {
+   "default": "4.26",
    "fieldname": "payable_f_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "4.2",
    "fieldname": "payable_f_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "fildset_payable",
@@ -502,14 +561,18 @@
    "options": "<div>\n<h5> Filedset payable a </h5>\n</div>"
   },
   {
+   "default": "4.26",
    "fieldname": "filedset_pay_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "0.3",
    "fieldname": "filedset_pay_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "legende_payable",
@@ -517,14 +580,18 @@
    "options": "<div>\n<h5> Legend payable a</h5>\n</div>"
   },
   {
+   "default": "1.8",
    "fieldname": "legend_pay_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "1",
    "fieldname": "legend_pay_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "legend_a",
@@ -532,9 +599,11 @@
    "options": "<div>\n<h5> Legend A </h5>\n</div>"
   },
   {
+   "default": "1.6",
    "fieldname": "legend_a_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
    "fieldname": "legend_le",
@@ -542,9 +611,11 @@
    "options": "<div>\n<h5> Legend Le </h5>\n</div>"
   },
   {
+   "default": "1.6",
    "fieldname": "legend_le_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
    "fieldname": "legend_fi",
@@ -552,14 +623,18 @@
    "options": "<div>\n<h5> Legend  \u0641\u064a </h5>\n</div>"
   },
   {
+   "default": "1.57",
    "fieldname": "legend_fi_supp",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
+   "default": "4.8",
    "fieldname": "legend_fi_gauche",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
    "fieldname": "legend_bi",
@@ -567,19 +642,25 @@
    "options": "<div>\n<h5> Legend \u0628\u0640</h5>\n</div>"
   },
   {
+   "default": "1.57",
    "fieldname": "legend_bi_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "6.92",
    "fieldname": "legend_bi_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
+   "default": "1.7",
    "fieldname": "legend_le_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "maken",
@@ -587,14 +668,18 @@
    "options": "<div>\n<h5>  \u0627\u0644\u0645\u0643\u0627\u0646</h5>\n</div>"
   },
   {
+   "default": "1.5",
    "fieldname": "maken_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "6",
    "fieldname": "maken_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
    "fieldname": "codecmc7",
@@ -602,24 +687,30 @@
    "options": "<div>\n<h5>  Code CMC7</h5>\n</div>"
   },
   {
+   "default": "6.8",
    "fieldname": "cmc7_supp",
    "fieldtype": "Float",
-   "label": "Distance du bord sup\u00e9rieur"
+   "label": "Distance du bord sup\u00e9rieur",
+   "precision": "2"
   },
   {
+   "default": "2.3",
    "fieldname": "cmc7_gauche",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   },
   {
+   "default": "7",
    "fieldname": "legend_a_droit",
    "fieldtype": "Float",
-   "label": "Emplacement de d\u00e9part depuis le bord gauche"
+   "label": "Emplacement de d\u00e9part depuis le bord gauche",
+   "precision": "2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-16 17:56:31.915092",
+ "modified": "2023-05-13 16:16:56.060715",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Modele de cheque",

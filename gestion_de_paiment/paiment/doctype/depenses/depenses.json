@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:nom_de_la_depense",
  "creation": "2023-04-03 10:53:19.241664",
@@ -12,13 +13,21 @@
   "type_de_tiers",
   "status",
   "tiers",
+  "montant_net",
+  "column_break_7vxbt",
   "devise",
-  "section_break_nyv2c",
   "r\u00e9f\u00e9rence",
   "nature_de_d\u00e9pense",
   "service_\u00e9metteur_de_la_d\u00e9pense",
   "mode_de_r\u00e9glement",
-  "ribss"
+  "section_break_nyv2c",
+  "ribss",
+  "numero_de_ch\u00e9que",
+  "r\u00e9f\u00e9rence_du_virement",
+  "date_demission",
+  "date_de_validation",
+  "date_de_cloture",
+  "journ\u00e9e_cloture"
  ],
  "fields": [
   {
@@ -74,8 +83,10 @@
    "fieldtype": "Section Break"
   },
   {
+   "default": "CREE",
    "fieldname": "status",
    "fieldtype": "Select",
+   "hidden": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "status",
@@ -94,11 +105,51 @@
    "label": "Nom de la depense",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "montant_net",
+   "fieldtype": "Currency",
+   "label": "Montant net"
+  },
+  {
+   "fieldname": "column_break_7vxbt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numero_de_ch\u00e9que",
+   "fieldtype": "Data",
+   "label": "Numero de ch\u00e9que",
+   "read_only": 1
+  },
+  {
+   "fieldname": "r\u00e9f\u00e9rence_du_virement",
+   "fieldtype": "Data",
+   "label": "R\u00e9f\u00e9rence du virement"
+  },
+  {
+   "fieldname": "date_demission",
+   "fieldtype": "Date",
+   "label": "Date d'emission"
+  },
+  {
+   "fieldname": "date_de_validation",
+   "fieldtype": "Date",
+   "label": "Date de validation"
+  },
+  {
+   "fieldname": "date_de_cloture",
+   "fieldtype": "Data",
+   "label": "Date de cloture"
+  },
+  {
+   "fieldname": "journ\u00e9e_cloture",
+   "fieldtype": "Data",
+   "label": "Journ\u00e9e cloture"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-20 12:14:13.309645",
+ "modified": "2023-05-16 19:43:25.855457",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Depenses",

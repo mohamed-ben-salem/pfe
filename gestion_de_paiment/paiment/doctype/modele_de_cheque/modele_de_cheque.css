@@ -7,4 +7,10 @@
     font-family: myFont;
   }
   
-  
+.print-format p{
+  margin:3px 0px 14px;
+}
+
+legend {
+  margin-bottom: 0rem;
+}

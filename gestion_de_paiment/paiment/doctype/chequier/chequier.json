@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{nom_soci\u00e9te}-{###}",
+ "creation": "2023-05-16 21:25:48.845240",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom_soci\u00e9te",
+  "compte_bancaire",
+  "num\u00e9ro_d\u00e9but",
+  "num\u00e9ro_fin"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom_soci\u00e9te",
+   "fieldtype": "Link",
+   "label": "Soci\u00e9te",
+   "options": "Societe"
+  },
+  {
+   "fieldname": "compte_bancaire",
+   "fieldtype": "Link",
+   "label": "Compte bancaire",
+   "options": "Compte bancaire"
+  },
+  {
+   "fieldname": "num\u00e9ro_d\u00e9but",
+   "fieldtype": "Data",
+   "label": "Num\u00e9ro d\u00e9but"
+  },
+  {
+   "fieldname": "num\u00e9ro_fin",
+   "fieldtype": "Data",
+   "label": "Num\u00e9ro fin"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-16 21:25:48.845240",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "Chequier",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

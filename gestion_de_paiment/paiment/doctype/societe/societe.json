@@ -31,7 +31,8 @@
   "column_break_bh5qh",
   "nbre_ass",
   "section_break_gulh4",
-  "ribs"
+  "ribs",
+  "compte_bancaire"
  ],
  "fields": [
   {
@@ -161,11 +162,17 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Abr\u00e9viation"
+  },
+  {
+   "fieldname": "compte_bancaire",
+   "fieldtype": "Link",
+   "label": "Compte bancaire",
+   "options": "Compte bancaire"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-13 22:24:55.800969",
+ "modified": "2023-05-13 18:49:51.344528",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Societe",
