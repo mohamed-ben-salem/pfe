@@ -37,12 +37,12 @@ frappe.ui.form.on('Chequier', {
 			  args:
 			  {
 				 doctype: "Societe",
-				 filters: {"name": frm.doc.societe_name},
-				 fieldname: ["default_account"]
+				 filters: {"name": frm.doc.nom_de_la_société},
+				 fieldname: ["compte_bancaire"]
 			  },
 			  callback: function(r)
 			  {
-				frm.set_value("account", r.message.default_account)
+				frm.set_value("account", r.message.compte_bancaire)
 			  }
 			});
 			// Retrieve all chequier_list documents that attached to account
@@ -70,14 +70,14 @@ frappe.ui.form.on('Chequier', {
 			  async: false,
 			  args:
 			  {
-				 doctype: "Compte Societe",
+				 doctype: "Compte bancaire",
 				 filters: {"name": frm.doc.account},
-				 fieldname: ["name","bank_name"]
+				 fieldname: ["name","banque"]
 			  },
 			  callback: function(r)
 			  {
-				console.log(r.message.bank_name)
-				frm.set_value("bank", r.message.bank_name)
+				console.log(r.message.banque)
+				frm.set_value("bank", r.message.banque)
 			  }
 			});
 					// Retrieve all chequier_list documents that attached to account

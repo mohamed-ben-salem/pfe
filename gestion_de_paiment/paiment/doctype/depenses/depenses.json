@@ -19,15 +19,17 @@
   "r\u00e9f\u00e9rence",
   "nature_de_d\u00e9pense",
   "service_\u00e9metteur_de_la_d\u00e9pense",
+  "section_break_wflop",
   "mode_de_r\u00e9glement",
-  "section_break_nyv2c",
-  "ribss",
   "numero_de_ch\u00e9que",
+  "column_break_fnkv0",
   "r\u00e9f\u00e9rence_du_virement",
   "date_demission",
   "date_de_validation",
   "date_de_cloture",
-  "journ\u00e9e_cloture"
+  "motif_dannulation",
+  "section_break_nyv2c",
+  "ribss"
  ],
  "fields": [
   {
@@ -74,8 +76,9 @@
   },
   {
    "fieldname": "mode_de_r\u00e9glement",
-   "fieldtype": "Data",
-   "label": "Mode de r\u00e9glement",
+   "fieldtype": "Select",
+   "label": "Mode de paiment",
+   "options": "\nCh\u00e8que\nVirement",
    "read_only": 1
   },
   {
@@ -116,40 +119,57 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.mode_de_r\u00e9glement==\"Ch\u00e8que\"",
    "fieldname": "numero_de_ch\u00e9que",
    "fieldtype": "Data",
    "label": "Numero de ch\u00e9que",
    "read_only": 1
   },
   {
+   "depends_on": "eval:doc.mode_de_r\u00e9glement==\"Virement\"",
    "fieldname": "r\u00e9f\u00e9rence_du_virement",
    "fieldtype": "Data",
-   "label": "R\u00e9f\u00e9rence du virement"
+   "label": "R\u00e9f\u00e9rence du virement",
+   "read_only": 1
   },
   {
    "fieldname": "date_demission",
    "fieldtype": "Date",
-   "label": "Date d'emission"
+   "label": "Date d'emission",
+   "read_only": 1
   },
   {
    "fieldname": "date_de_validation",
    "fieldtype": "Date",
-   "label": "Date de validation"
+   "label": "Date de validation",
+   "read_only": 1
   },
   {
    "fieldname": "date_de_cloture",
    "fieldtype": "Data",
-   "label": "Date de cloture"
+   "label": "Date de cloture",
+   "read_only": 1
   },
   {
-   "fieldname": "journ\u00e9e_cloture",
+   "fieldname": "motif_dannulation",
    "fieldtype": "Data",
-   "label": "Journ\u00e9e cloture"
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Motif d'annulation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_wflop",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_fnkv0",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-16 19:43:25.855457",
+ "modified": "2023-05-17 15:11:11.383345",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Depenses",

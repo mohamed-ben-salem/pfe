@@ -21,7 +21,7 @@ frappe.ui.form.on('Depenses', {
                         "rib" : row.rib,
                         "banque" : row.banque,
                         "compte_bancaire" : row.cpt_banquaire,
-                        "par_defaut" : row.par_defaut
+                        "par_defaut" : row.par_defautG
                     }
                     items.push(item)
                 });

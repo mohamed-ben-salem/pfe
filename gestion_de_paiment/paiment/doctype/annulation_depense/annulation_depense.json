@@ -1,36 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-04-26 12:17:04.265608",
+ "creation": "2023-05-16 23:51:01.912538",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "liste_de_d\u00e9penses_emis",
-  "date_de_validation"
+  "motif_dannulation",
+  "liste_d\u00e9pense_annul\u00e9"
  ],
  "fields": [
   {
-   "fieldname": "liste_de_d\u00e9penses_emis",
-   "fieldtype": "Table",
-   "label": "Liste de d\u00e9penses emis",
-   "options": "Liste depense emis"
+   "fieldname": "motif_dannulation",
+   "fieldtype": "Data",
+   "label": "Motif d'annulation"
   },
   {
-   "fieldname": "date_de_validation",
-   "fieldtype": "Date",
-   "label": "date de validation",
-   "read_only": 1
+   "fieldname": "liste_d\u00e9pense_annul\u00e9",
+   "fieldtype": "Table",
+   "label": "Liste d\u00e9pense annul\u00e9",
+   "options": "Liste depense annule"
   }
  ],
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-17 15:02:37.116958",
+ "modified": "2023-05-17 15:06:36.933560",
  "modified_by": "Administrator",
  "module": "paiment",
- "name": "Validation Reglement Emis",
+ "name": "Annulation depense",
  "owner": "Administrator",
  "permissions": [
   {
@@ -48,6 +47,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }

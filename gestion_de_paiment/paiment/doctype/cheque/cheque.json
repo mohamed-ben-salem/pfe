@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{benificiare} {banque}",
+ "autoname": "format:{benificiare} {banque} {###}",
  "creation": "2023-05-13 17:36:57.100503",
  "default_view": "List",
  "doctype": "DocType",
@@ -92,7 +92,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-15 15:01:30.031914",
+ "modified": "2023-05-16 22:48:35.837226",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Cheque",

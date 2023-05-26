@@ -5,4 +5,5 @@
 from frappe.model.document import Document
 
 class Chequier(Document):
-	pass
+	def autoname(self):
+		self.name = "CHQ-" + str(self.first_num) + "_" + str(self.last_num)

@@ -1,36 +1,32 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-04-26 12:17:04.265608",
+ "autoname": "field:motif",
+ "creation": "2023-05-17 00:16:07.274791",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "liste_de_d\u00e9penses_emis",
-  "date_de_validation"
+  "motif"
  ],
  "fields": [
   {
-   "fieldname": "liste_de_d\u00e9penses_emis",
-   "fieldtype": "Table",
-   "label": "Liste de d\u00e9penses emis",
-   "options": "Liste depense emis"
-  },
-  {
-   "fieldname": "date_de_validation",
-   "fieldtype": "Date",
-   "label": "date de validation",
-   "read_only": 1
+   "fieldname": "motif",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Motif d'annulation",
+   "reqd": 1,
+   "unique": 1
   }
  ],
- "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-17 15:02:37.116958",
+ "modified": "2023-05-17 00:16:07.274791",
  "modified_by": "Administrator",
  "module": "paiment",
- "name": "Validation Reglement Emis",
+ "name": "Motif d annulation",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -48,6 +44,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }

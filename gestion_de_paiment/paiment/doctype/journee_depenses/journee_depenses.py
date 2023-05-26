@@ -5,16 +5,19 @@ import frappe
 from frappe.model.document import Document
 from frappe.utils import today
 
-class ValidationReglementEmis(Document):
+class Journeedepenses(Document):
     def validate(self):
-        for item in self.liste_de_dépenses_emis:
+        if self.is_new():
+            self.status='Non Cloturée'
+    def after_insert(self):       
+        for item in self.liste_depenses_validee:
             Depenses = frappe.get_doc("Depenses",item.nom_de_la_depense)
-            if Depenses.status == "EMISE":
-                Depenses.status = "VALIDEE"
-            self.date_de_validation= today()
-            Depenses.date_de_validation= self.date_de_validation
-            
+            Depenses.journee_cloture= self.name
+            self.date_de_cloture = today()
+            Depenses.date_de_cloture = self.date_de_cloture
             Depenses.save()
             
-	
             
+             
+             
+

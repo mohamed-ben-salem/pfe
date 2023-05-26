@@ -10,11 +10,9 @@
  "field_order": [
   "name1",
   "societe",
-  "mode_de_r\u00e9glement",
+  "mode_de_payment",
   "column_break_kfmee",
-  "r\u00e9f\u00e9rence_du_virement",
   "date_emission",
-  "num\u00e9ro_de_ch\u00e9que",
   "section_break_2ujei",
   "liste_depense",
   "ribss"
@@ -46,19 +44,8 @@
    "options": "Reglement depense"
   },
   {
-   "fieldname": "mode_de_r\u00e9glement",
-   "fieldtype": "Select",
-   "label": "Mode de r\u00e9glement",
-   "options": "Modele de cheque\nVirement"
-  },
-  {
    "fieldname": "column_break_kfmee",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "r\u00e9f\u00e9rence_du_virement",
-   "fieldtype": "Data",
-   "label": "r\u00e9f\u00e9rence du virement"
   },
   {
    "fieldname": "date_emission",
@@ -67,18 +54,20 @@
    "read_only": 1
   },
   {
-   "fieldname": "num\u00e9ro_de_ch\u00e9que",
-   "fieldtype": "Data",
-   "label": "Num\u00e9ro de ch\u00e9que "
-  },
-  {
    "fieldname": "section_break_2ujei",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mode_de_payment",
+   "fieldtype": "Select",
+   "label": "Mode de payment",
+   "options": "Ch\u00e8que\nVirement"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-24 12:52:16.067762",
+ "modified": "2023-05-17 14:30:37.197512",
  "modified_by": "Administrator",
  "module": "paiment",
  "name": "Emision Reglement",

@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class Testabc(FrappeTestCase):
+class TestMotifdannulation(FrappeTestCase):
 	pass
