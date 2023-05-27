@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Depense.############",
+ "creation": "2023-05-27 09:17:58.830987",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nom_de_la_depense",
+  "type_de_tiers",
+  "status",
+  "tiers",
+  "montant_net",
+  "column_break_7vxbt",
+  "devise",
+  "r\u00e9f\u00e9rence",
+  "nature_de_d\u00e9pense",
+  "service_\u00e9metteur_de_la_d\u00e9pense",
+  "section_break_wflop",
+  "mode_de_r\u00e9glement",
+  "numero_de_ch\u00e9que",
+  "column_break_fnkv0",
+  "r\u00e9f\u00e9rence_du_virement",
+  "date_demission",
+  "date_de_validation",
+  "date_de_cloture",
+  "motif_dannulation",
+  "section_break_nyv2c",
+  "ribss"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom_de_la_depense",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom de la depense"
+  },
+  {
+   "fieldname": "type_de_tiers",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type de tiers",
+   "options": "DocType"
+  },
+  {
+   "default": "CREE",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "status",
+   "options": "\nCREE\nEMISE\nVALIDEE"
+  },
+  {
+   "fieldname": "tiers",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Tiers",
+   "options": "type_de_tiers"
+  },
+  {
+   "fieldname": "montant_net",
+   "fieldtype": "Currency",
+   "label": "Montant net"
+  },
+  {
+   "fieldname": "column_break_7vxbt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "devise",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Devise",
+   "options": "Devise"
+  },
+  {
+   "fieldname": "r\u00e9f\u00e9rence",
+   "fieldtype": "Data",
+   "label": "R\u00e9f\u00e9rence"
+  },
+  {
+   "fieldname": "nature_de_d\u00e9pense",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nature de d\u00e9pense",
+   "options": "Natures"
+  },
+  {
+   "fieldname": "service_\u00e9metteur_de_la_d\u00e9pense",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service \u00e9metteur de la d\u00e9pense",
+   "options": "Service"
+  },
+  {
+   "fieldname": "section_break_wflop",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mode_de_r\u00e9glement",
+   "fieldtype": "Select",
+   "label": "Mode de paiment",
+   "options": "\nCh\u00e8que\nVirement",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.mode_de_r\u00e9glement==\"Ch\u00e8que\"",
+   "fieldname": "numero_de_ch\u00e9que",
+   "fieldtype": "Data",
+   "label": "Numero de ch\u00e9que",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fnkv0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.mode_de_r\u00e9glement==\"Virement\"",
+   "fieldname": "r\u00e9f\u00e9rence_du_virement",
+   "fieldtype": "Data",
+   "label": "R\u00e9f\u00e9rence du virement",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_demission",
+   "fieldtype": "Date",
+   "label": "Date d'emission",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_de_validation",
+   "fieldtype": "Date",
+   "label": "Date de validation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_de_cloture",
+   "fieldtype": "Data",
+   "label": "Date de cloture",
+   "read_only": 1
+  },
+  {
+   "fieldname": "motif_dannulation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Motif d'annulation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_nyv2c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ribss",
+   "fieldtype": "Table",
+   "label": "Les donnees bancaire",
+   "options": "RIB_depenses"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-27 09:54:14.277670",
+ "modified_by": "Administrator",
+ "module": "paiment",
+ "name": "testImportation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
